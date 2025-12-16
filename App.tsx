@@ -48,7 +48,11 @@ const App: React.FC = () => {
         );
     }
   };
-
+<Routes>
+  <Route path="/" element={<Home />} />
+  {/* This is the line you want to change */}
+  <Route path="/admin" element={<AdminConsole />} />
+</Routes>
   return (
     <div className="min-h-screen bg-gray-50 py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center relative overflow-hidden">
       
