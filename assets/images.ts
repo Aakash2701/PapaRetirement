@@ -11,6 +11,11 @@
 // --------------------------------------------------------
 
 // Current default remote images
-export const profileImage = "https://ui-avatars.com/api/?name=Vishnu+Aggarwal&background=f3f4f6&color=1e3a8a&size=256&font-size=0.33&uppercase=true";
+//export const profileImage = "https://ui-avatars.com/api/?name=Vishnu+Aggarwal&background=f3f4f6&color=1e3a8a&size=256&font-size=0.33&uppercase=true";
 
-export const companyLogo = "https://upload.wikimedia.org/wikipedia/en/9/9c/Oriental_Insurance_Company_Logo.svg";
+//export const companyLogo = "https://upload.wikimedia.org/wikipedia/en/9/9c/Oriental_Insurance_Company_Logo.svg";
+
+import myProfilePic from './pic.jpg';
+import myCompanyLogo from './logo.png';
+export const profileImage = myProfilePic;
+export const companyLogo = myCompanyLogo;
