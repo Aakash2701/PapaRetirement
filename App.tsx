@@ -48,11 +48,7 @@ const App: React.FC = () => {
         );
     }
   };
-<Routes>
-  <Route path="/" element={<Home />} />
-  {/* This is the line you want to change */}
-  <Route path="/admin" element={<AdminConsole />} />
-</Routes>
+
   return (
     <div className="min-h-screen bg-gray-50 py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center relative overflow-hidden">
       
@@ -80,6 +76,12 @@ const App: React.FC = () => {
           <footer className="mt-12 text-center text-gray-500 text-sm pb-8">
             <p className="font-serif italic">© {new Date().getFullYear()} Aggarwal Family</p>
             <p className="text-xs mt-2 opacity-60">We look forward to seeing you!</p>
+            <button 
+              onClick={() => setView('admin')}
+              className="mt-6 text-[10px] uppercase tracking-widest text-gray-400 hover:text-royal-800 transition-colors border-b border-transparent hover:border-royal-800"
+            >
+              Admin Login
+            </button>
           </footer>
         )}
       </div>
