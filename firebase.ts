@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { initializeApp, FirebaseApp } from "firebase/app";
+import { getFirestore, Firestore } from "firebase/firestore";
 
 // Safe access to environment variables to prevent runtime crashes if import.meta.env is undefined
 const env = (import.meta as any).env || {};
@@ -13,9 +13,9 @@ const firebaseConfig = {
   appId: env.VITE_FIREBASE_APP_ID
 };
 
-// Initialize Firebase
-let app;
-let dbInstance;
+// Initialize Firebase with explicit types
+let app: FirebaseApp | undefined;
+let dbInstance: Firestore | undefined;
 
 try {
   // Check if config is present (apiKey is a good proxy)
