@@ -130,7 +130,7 @@ const InvitationCard: React.FC<InvitationCardProps> = ({ onRsvpClick, onGreeting
 
           
           <a 
-            href={`tel:${EVENT_DETAILS.contactNumber}`}
+            href={`tel:${EVENT_DETAILS.contactRSVP}`}
             className="flex items-center justify-center w-full px-6 py-3 text-royal-800/80 hover:text-royal-900 bg-transparent hover:bg-gold-50/50 rounded-xl transition-all active:scale-95 font-medium border border-transparent hover:border-gold-200 text-sm"
           >
             <Phone className="w-4 h-4 mr-2" />
