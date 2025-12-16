@@ -59,24 +59,23 @@ const GuestBook: React.FC<GuestBookProps> = ({ onBack, onSubmitSuccess }) => {
         text: text,
         timestamp: serverTimestamp()
       });
-
-      // 2. Send to WhatsApp (optional, but requested in original flow)
-      const waText = encodeURIComponent(`*New Greeting*\nFrom: ${name}\nMessage: "${text}"`);
-      window.open(`https://wa.me/91${EVENT_DETAILS.contactNumber}?text=${waText}`, '_blank');
-
-      // Clear form
-      setName('');
-      setText('');
-
-      // Trigger success navigation if prop provided
-      if (onSubmitSuccess) {
-        onSubmitSuccess();
-      }
     } catch (error) {
-      console.error("Error sending message:", error);
-      alert("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+      console.error("Error saving message to database:", error);
+      // Continue to WhatsApp flow even if DB fails
+    }
+
+    // 2. Send to WhatsApp
+    const waText = encodeURIComponent(`*New Greeting*\nFrom: ${name}\nMessage: "${text}"`);
+    window.open(`https://wa.me/91${EVENT_DETAILS.contactNumber}?text=${waText}`, '_blank');
+
+    // Clear form
+    setName('');
+    setText('');
+    setIsSubmitting(false);
+
+    // Trigger success navigation if prop provided
+    if (onSubmitSuccess) {
+      onSubmitSuccess();
     }
   };
 
