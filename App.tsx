@@ -76,12 +76,6 @@ const App: React.FC = () => {
           <footer className="mt-12 text-center text-gray-500 text-sm pb-8">
             <p className="font-serif italic">© {new Date().getFullYear()} Aggarwal Family</p>
             <p className="text-xs mt-2 opacity-60">We look forward to seeing you!</p>
-          </* button 
-              onClick={() => setView('admin')}
-              className="mt-6 text-[10px] uppercase tracking-widest text-gray-400 hover:text-royal-800 transition-colors border-b border-transparent hover:border-royal-800"
-            >
-              Admin Login
-            </button*/>
           </footer>
         )}
       </div>
