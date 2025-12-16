@@ -33,17 +33,6 @@ const AdminPanel: React.FC<AdminPanelProps> = ({ onBack }) => {
   const [guests, setGuests] = useState<RsvpData[]>([]);
   const [messages, setMessages] = useState<MessageData[]>([]);
 
-  // Simple static authentication
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (username === 'admin' && password === 'admin123') {
-      setIsAuthenticated(true);
-      fetchData();
-    } else {
-      setError('Invalid credentials');
-    }
-  };
-
   const fetchData = async () => {
     setIsLoading(true);
     try {
@@ -62,6 +51,17 @@ const AdminPanel: React.FC<AdminPanelProps> = ({ onBack }) => {
       console.error("Error fetching data:", err);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  // Simple static authentication
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (username === 'admin' && password === 'admin123') {
+      setIsAuthenticated(true);
+      fetchData();
+    } else {
+      setError('Invalid credentials');
     }
   };
 
