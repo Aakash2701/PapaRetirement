@@ -113,7 +113,7 @@ const RsvpForm: React.FC<RsvpFormProps> = ({ onBack, onSubmit }) => {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="block w-full pl-10 pr-3 py-3.5 bg-royal-950/50 border border-royal-700 rounded-xl focus:ring-2 focus:ring-gold-500/50 focus:border-gold-500 text-white placeholder-royal-400/50 transition-all outline-none"
+                className="block w-full pl-10 pr-3 py-3.5 bg-royal-950/50 border border-royal-700 rounded-xl focus:ring-2 focus:ring-gold-500/50 focus:border-gold-500 text-black placeholder-royal-400/50 transition-all outline-none"
                 placeholder="Ex. Aakash Aggarwal"
                 required
                 disabled={isSubmitting}
@@ -132,7 +132,7 @@ const RsvpForm: React.FC<RsvpFormProps> = ({ onBack, onSubmit }) => {
                 id="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="block w-full pl-10 pr-3 py-3.5 bg-royal-950/50 border border-royal-700 rounded-xl focus:ring-2 focus:ring-gold-500/50 focus:border-gold-500 text-white placeholder-royal-400/50 transition-all outline-none"
+                className="block w-full pl-10 pr-3 py-3.5 bg-royal-950/50 border border-royal-700 rounded-xl focus:ring-2 focus:ring-gold-500/50 focus:border-gold-500 text-black placeholder-royal-400/50 transition-all outline-none"
                 placeholder="Ex. 9876543210"
                 required
                 disabled={isSubmitting}
