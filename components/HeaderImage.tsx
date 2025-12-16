@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { headerImage } from '../assets/images';
 
 const HeaderImage: React.FC = () => {
   const imageRef = useRef<HTMLImageElement>(null);
@@ -34,10 +35,10 @@ const HeaderImage: React.FC = () => {
     <div className="relative h-48 sm:h-56 w-full overflow-hidden rounded-t-2xl bg-royal-900 z-0">
       <img 
         ref={imageRef}
-        src="https://picsum.photos/800/600?grayscale&blur=2" 
+        src={headerImage}
         alt="Celebration Background" 
         // Height is set to 140% to allow room for parallax movement without showing empty space
-        className="w-full h-[140%] object-cover opacity-70"
+        className="w-full h-[140%] object-cover opacity-80"
         // Initial transform sets the starting position
         style={{ willChange: 'transform', transform: 'translateY(-15%)' }}
       />

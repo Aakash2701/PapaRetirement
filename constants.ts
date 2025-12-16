@@ -12,7 +12,7 @@ export const EVENT_DETAILS: EventDetails = {
   venueAddress: "Wazirpur, Delhi",
   mapLink: "https://www.google.com/maps/search/?api=1&query=Green+Lounge+Wazirpur+Delhi",
   rsvpName: "Aakash & Himani Aggarwal",
-  contactNumber: "8010228010"
+  contactNumber: "801028010"
 };
 
 // Helper to determine the specific Date object for the countdown
