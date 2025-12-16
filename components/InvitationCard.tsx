@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Calendar, Clock, Phone, Navigation, CheckCircle, MessageCircleHeart, Star } from 'lucide-react';
+import { MapPin, Calendar, Clock, Phone, Navigation, MessageCircleHeart, Star } from 'lucide-react';
 import { EVENT_DETAILS } from '../constants';
 import HeaderImage from './HeaderImage';
 import InfoRow from './InfoRow';
