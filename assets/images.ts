@@ -19,3 +19,5 @@ import myProfilePic from './pic.jpg';
 import myCompanyLogo from './logo.png';
 export const profileImage = myProfilePic;
 export const companyLogo = myCompanyLogo;
+export const headerImage = "https://images.unsplash.com/photo-1530103862676-de3c9a59af38?q=80&w=2000&auto=format&fit=crop"; 
+
