@@ -10,4 +10,5 @@ export interface EventDetails {
   mapLink: string;
   rsvpName: string;
   contactNumber: string;
+  contactRSVP: string;
 }
