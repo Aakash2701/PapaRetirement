@@ -12,7 +12,7 @@ export const EVENT_DETAILS: EventDetails = {
   venueAddress: "Wazirpur, Delhi",
   mapLink: "https://www.google.com/maps/search/?api=1&query=Green+Lounge+Wazirpur+Delhi",
   rsvpName: "Aakash & Himani Aggarwal",
-  contactNumber: "9811485945"
+  contactNumber: "9811485945",
   contactRSVP: "8010228010"
 };
 
