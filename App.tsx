@@ -23,7 +23,7 @@ const App: React.FC = () => {
         return (
           <GuestBook 
             onBack={() => setView('home')} 
-            onSubmitSuccess={() => setView('success')} 
+            onSubmit={() => setView('success')} 
           />
         );
       case 'success':
