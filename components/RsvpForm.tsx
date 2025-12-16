@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Phone, CheckCircle, ArrowLeft } from 'lucide-react';
+import { User, Phone, ArrowLeft } from 'lucide-react';
 import { EVENT_DETAILS } from '../constants';
 
 interface RsvpFormProps {
